@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartScreenViewController" customModule="NotBored" customModuleProvider="target">
             <connections>
                 <outlet property="participantsTextField" destination="KTP-eE-32U" id="2is-oh-XK7"/>
+                <outlet property="startButton" destination="GhO-fK-73D" id="DME-lf-dFe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -37,7 +38,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number of participants" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KTP-eE-32U">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number of participants" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KTP-eE-32U">
                                     <rect key="frame" x="20" y="416" width="374" height="34"/>
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -64,7 +65,7 @@
                                     <buttonConfiguration key="configuration" style="plain" title="Start" cornerStyle="medium">
                                         <backgroundConfiguration key="background">
                                             <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                            <color key="strokeColor" systemColor="opaqueSeparatorColor"/>
+                                            <color key="strokeColor" systemColor="systemGray6Color"/>
                                         </backgroundConfiguration>
                                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,9 +118,6 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

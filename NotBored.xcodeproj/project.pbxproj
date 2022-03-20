@@ -12,6 +12,8 @@
 		A9731DB927E5154600C3F126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9731DB827E5154600C3F126 /* Assets.xcassets */; };
 		A9731DD027E66F5400C3F126 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9731DCE27E66F5400C3F126 /* StartScreenViewController.swift */; };
 		A9731DD127E66F5400C3F126 /* StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9731DCF27E66F5400C3F126 /* StartScreenViewController.xib */; };
+		A9731DD427E6B92000C3F126 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9731DD227E6B92000C3F126 /* TermsAndConditionsViewController.swift */; };
+		A9731DD527E6B92000C3F126 /* TermsAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9731DD327E6B92000C3F126 /* TermsAndConditionsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A9731DBD27E5154600C3F126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9731DCE27E66F5400C3F126 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		A9731DCF27E66F5400C3F126 /* StartScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartScreenViewController.xib; sourceTree = "<group>"; };
+		A9731DD227E6B92000C3F126 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		A9731DD327E6B92000C3F126 /* TermsAndConditionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			children = (
 				A9731DCE27E66F5400C3F126 /* StartScreenViewController.swift */,
 				A9731DCF27E66F5400C3F126 /* StartScreenViewController.xib */,
+				A9731DD227E6B92000C3F126 /* TermsAndConditionsViewController.swift */,
+				A9731DD327E6B92000C3F126 /* TermsAndConditionsViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9731DB927E5154600C3F126 /* Assets.xcassets in Resources */,
+				A9731DD527E6B92000C3F126 /* TermsAndConditionsViewController.xib in Resources */,
 				A9731DD127E66F5400C3F126 /* StartScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9731DD427E6B92000C3F126 /* TermsAndConditionsViewController.swift in Sources */,
 				A9731DD027E66F5400C3F126 /* StartScreenViewController.swift in Sources */,
 				A9731DB027E5154500C3F126 /* AppDelegate.swift in Sources */,
 				A9731DB227E5154500C3F126 /* SceneDelegate.swift in Sources */,
