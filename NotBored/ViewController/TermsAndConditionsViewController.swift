@@ -7,7 +7,7 @@ class TermsAndConditionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myCustomTextView.textColor = .white
+        myCustomTextView.textColor = .black
     }
 
     // Actions

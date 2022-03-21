@@ -1,22 +1,31 @@
 import UIKit
 
-class StartScreenViewController: UIViewController {
+class StartScreenViewController: UIViewController, UITextFieldDelegate {
 
     
     // MARK: *** Outlets ***
     @IBOutlet weak var participantsTextField: UITextField!
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var startButton: UIButton! {
+        didSet {
+            startButton.layer.cornerRadius = 10
+            startButton.backgroundColor = .systemYellow
+            startButton.layer.opacity = 0.6
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Keyboard only with numbers
-        onlyNumbers()
         
+        // Keyboard only with numbers
+        self.participantsTextField.keyboardType = .numberPad
+    
         // Close keyboard by touching anywhere
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        textFieldDidChange(textField: participantsTextField)
+        // Validates that the conditions are met for the button to be enabled
+        participantsTextField.delegate = self
+        startButton.isEnabled = false
     }
     
     // MARK: *** Actions ***
@@ -39,20 +48,17 @@ class StartScreenViewController: UIViewController {
 extension StartScreenViewController {
     
     // MARK: *** Functions ***
-     
-    // Function for changes the type of keyboard to a numeric one
-    func onlyNumbers() {
-        self.participantsTextField.keyboardType = .numberPad
-        
-    }
     
-    // function to disable start button when it has no value
-    func textFieldDidChange(textField: UITextField) {
-
-        if textField.text != nil {
-            startButton.isEnabled = true
-        }else{
+    // function to disable start button when it has no value or its value its less than 1
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        let numberTextField = Int(textField.text ?? "0") ?? 0
+        
+        if numberTextField.words.isEmpty || numberTextField < 1 {
             startButton.isEnabled = false
+            startButton.layer.opacity = 0.6
+        } else {
+            startButton.isEnabled = true
+            startButton.layer.opacity = 1
         }
     }
     
