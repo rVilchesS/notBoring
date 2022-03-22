@@ -12,6 +12,6 @@ class TermsAndConditionsViewController: UIViewController {
 
     // Actions
     @IBAction func closeTap(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -29,7 +29,8 @@ class ActivityViewController: UIViewController {
     }
     
     @objc func tapShuffle() {
-    }
+     
+ }
 }
 
 extension ActivityViewController: UITableViewDataSource {

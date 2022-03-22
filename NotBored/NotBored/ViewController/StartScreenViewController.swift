@@ -7,16 +7,20 @@ class StartScreenViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var participantsTextField: UITextField!
     @IBOutlet weak var startButton: UIButton! {
         didSet {
-            startButton.layer.cornerRadius = 10
-            startButton.backgroundColor = .systemYellow
-            startButton.layer.opacity = 0.6
+            startButton.layer.cornerRadius = 15
+            startButton.backgroundColor = .systemBlue
+            startButton.layer.opacity = 0.8
         }
     }
-    @IBOutlet weak var switchTerms: UISwitch!
+    @IBOutlet weak var switchTerms: UISwitch!{
+        didSet{
+            switchTerms.onTintColor = .systemBlue
+        }
+    }
     
-//    @IBAction func switchTerms(_ sender: Any) {
-//        turnStartButton()
-//    }
+    @IBAction func switchTerms(_ sender: Any) {
+        //turnStartButton()
+   }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +34,7 @@ class StartScreenViewController: UIViewController, UITextFieldDelegate {
         // Validates that the conditions are met for the button to be enabled
         participantsTextField.delegate = self
         startButton.isEnabled = false
+        switchTerms.isOn = false
         
         
     
@@ -69,7 +74,7 @@ extension StartScreenViewController {
 
         if numberTextField.words.isEmpty || numberTextField < 1 {
             startButton.isEnabled = false
-            startButton.layer.opacity = 0.6
+            startButton.layer.opacity = 0.8
         } else {
             startButton.isEnabled = true
             startButton.layer.opacity = 1
