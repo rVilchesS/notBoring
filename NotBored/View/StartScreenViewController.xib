@@ -64,7 +64,7 @@
                                     <rect key="frame" x="60" y="635" width="51" height="31"/>
                                 </switch>
                                 <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsF-3w-DfX">
-                                    <rect key="frame" x="129" y="635" width="197" height="36"/>
+                                    <rect key="frame" x="119" y="635" width="245" height="36"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="Terms and conditions">
@@ -87,13 +87,13 @@
                                 <constraint firstItem="KTP-eE-32U" firstAttribute="top" secondItem="NaG-lC-iXI" secondAttribute="bottom" constant="20" id="cg5-8Q-93W"/>
                                 <constraint firstItem="NaG-lC-iXI" firstAttribute="top" secondItem="lmq-yT-Lhy" secondAttribute="bottom" constant="90" id="cqP-Hr-fn2"/>
                                 <constraint firstItem="GhO-fK-73D" firstAttribute="leading" secondItem="j8d-9Y-ld4" secondAttribute="leading" constant="20" id="cy8-Su-TCv"/>
-                                <constraint firstAttribute="trailing" secondItem="bsF-3w-DfX" secondAttribute="trailing" constant="88" id="d0P-DJ-xcA"/>
+                                <constraint firstAttribute="trailing" secondItem="bsF-3w-DfX" secondAttribute="trailing" constant="50" id="d0P-DJ-xcA"/>
                                 <constraint firstAttribute="height" constant="800" id="dd9-P0-hN8"/>
                                 <constraint firstAttribute="trailing" secondItem="KTP-eE-32U" secondAttribute="trailing" constant="20" id="iwC-YU-DvG"/>
                                 <constraint firstAttribute="trailing" secondItem="lmq-yT-Lhy" secondAttribute="trailing" constant="20" id="jkz-yM-UaK"/>
                                 <constraint firstItem="t1D-Lu-ggt" firstAttribute="leading" secondItem="j8d-9Y-ld4" secondAttribute="leading" constant="60" id="ks4-m7-Ova"/>
                                 <constraint firstItem="KTP-eE-32U" firstAttribute="leading" secondItem="j8d-9Y-ld4" secondAttribute="leading" constant="20" id="lxp-Iw-1ka"/>
-                                <constraint firstItem="bsF-3w-DfX" firstAttribute="leading" secondItem="t1D-Lu-ggt" secondAttribute="trailing" constant="20" id="oNd-Db-f5C"/>
+                                <constraint firstItem="bsF-3w-DfX" firstAttribute="leading" secondItem="t1D-Lu-ggt" secondAttribute="trailing" constant="10" id="oNd-Db-f5C"/>
                                 <constraint firstAttribute="trailing" secondItem="NaG-lC-iXI" secondAttribute="trailing" constant="20" id="obH-jZ-9Jg"/>
                                 <constraint firstItem="NaG-lC-iXI" firstAttribute="leading" secondItem="j8d-9Y-ld4" secondAttribute="leading" constant="20" id="sZA-h3-3XZ"/>
                             </constraints>

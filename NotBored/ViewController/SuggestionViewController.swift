@@ -15,19 +15,20 @@ class SuggestionViewController: UIViewController {
     @IBOutlet weak var iconCategory: UIImageView!
     @IBOutlet weak var btnTryAnother: UIButton!{
         didSet {
-            btnTryAnother.layer.cornerRadius = 10
-            btnTryAnother.backgroundColor = .systemBlue
+            btnTryAnother.layer.cornerRadius = 15
+            btnTryAnother.backgroundColor = .systemYellow
+            
         }
     }
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         service.getActivity(type: category, participants: participants) { [self] activity in
-            self.lblActivity.text = activity.activity
+            self.lblActivity.text = matchActivity(activity.activity)
             self.lblParticipants.text = self.participants
-            self.lblPrice.text = String(activity.price)
-            
+            self.lblPrice.text = priceCategory(activity.price)
             if category.isEmpty {
                 self.lblCategory.text = activity.type
             } else {
@@ -48,14 +49,22 @@ extension SuggestionViewController {
     func priceCategory(_ price : Double) -> String {
         if price == 0 {
             return "Free"
-        }
-        if price > 0 && price < 0.3 {
+        } else if price <= 0.3 {
             return "Low"
-        }
-        if price > 0.3 && price < 0.6 {
+        } else if price <= 0.6 {
             return "Medium"
+        } else {
+            return "High"
         }
-        return "High"
+    }
+    
+    func matchActivity(_ activity: String) -> String {
+        if activity.isEmpty {
+            lblActivity.textColor = .red
+            return "Sorry, we don't have activities for you"
+        } else {
+            return activity
+        }
     }
 }
 

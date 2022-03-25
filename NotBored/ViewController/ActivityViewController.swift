@@ -18,12 +18,10 @@ class ActivityViewController: UIViewController {
         categoriesTableView.dataSource = self
         categoriesTableView.delegate = self
         categoriesTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        getCategories()
-    }
-    
-    private func getCategories() {
         categoriesTableView.reloadData()
     }
+    
+    
 }
 
 extension ActivityViewController: UITableViewDataSource {

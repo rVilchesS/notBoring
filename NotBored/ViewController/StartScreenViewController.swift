@@ -38,6 +38,9 @@ class StartScreenViewController: UIViewController, UITextFieldDelegate {
     // MARK: *** Actions ***
 
     @IBAction func activitiesTappend(_ sender: Any) {
+        if !switchTerms.isOn {
+            presentNotAcceptedTermsAlert()
+        }
         let tabBarController = TabBarController()
         tabBarController.participants = participantsTextField.text ?? "0"
         tabBarController.modalPresentationStyle = .overFullScreen
@@ -62,17 +65,12 @@ extension StartScreenViewController {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         let numberTextField = Int(textField.text ?? "0") ?? 0
         
-        if switchTerms.isOn{
-            if numberTextField.words.isEmpty || numberTextField < 1 {
-                startButton.isEnabled = false
-                startButton.layer.opacity = 0.6
-            } else {
-                startButton.isEnabled = true
-                startButton.layer.opacity = 1
-            }
-        } else {
+        if numberTextField.words.isEmpty || numberTextField < 1 {
             startButton.isEnabled = false
             startButton.layer.opacity = 0.6
+        } else {
+            startButton.isEnabled = true
+            startButton.layer.opacity = 1
         }
     }
     
@@ -81,10 +79,10 @@ extension StartScreenViewController {
         view.endEditing(true)
     }
     
-//    func presentNotAcceptedTermsAlert() {
-//        let alert = UIAlertController(title: "Terms and Conditions", message: "Please accept the terms and conditions to continue.", preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in NSLog("The \"Terms OK\" alert occured.")}))
-//        self.present(alert, animated: true)
-//    }
+    func presentNotAcceptedTermsAlert() {
+        let alert = UIAlertController(title: "Terms and Conditions", message: "Please accept the terms and conditions to continue.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in NSLog("The \"Terms OK\" alert occured.")}))
+        self.present(alert, animated: true)
+    }
 }
 

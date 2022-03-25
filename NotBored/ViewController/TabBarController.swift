@@ -1,7 +1,7 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-    var participants = "1"
+    var participants = "0"
  
     override func viewDidLoad() {
         super.viewDidLoad()
