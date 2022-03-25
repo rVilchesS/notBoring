@@ -35,7 +35,7 @@ class ActivityService {
                     completion(Activities(activity: "", accessibility: 0, type: "", participants: 0, price: 0, link: "", key: ""))
                 }
             case .failure(_):
-                print("asd")
+                print("Error")
             }
         }
     }
