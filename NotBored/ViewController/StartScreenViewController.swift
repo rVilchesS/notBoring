@@ -13,6 +13,12 @@ class StartScreenViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBOutlet weak var switchTerms: UISwitch! {
+        didSet{
+            switchTerms.onTintColor = .systemYellow
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,12 +32,19 @@ class StartScreenViewController: UIViewController, UITextFieldDelegate {
         // Validates that the conditions are met for the button to be enabled
         participantsTextField.delegate = self
         startButton.isEnabled = false
+        switchTerms.isOn = false
     }
     
     // MARK: *** Actions ***
 
     @IBAction func activitiesTappend(_ sender: Any) {
-        
+        if !switchTerms.isOn {
+            presentNotAcceptedTermsAlert()
+        }
+        let tabBarController = TabBarController()
+        tabBarController.participants = participantsTextField.text ?? "0"
+        tabBarController.modalPresentationStyle = .overFullScreen
+        self.present(tabBarController, animated: true)
     }
     
     @IBAction func termsAndConditionsTappend(_ sender: Any) {
@@ -42,7 +55,6 @@ class StartScreenViewController: UIViewController, UITextFieldDelegate {
         // The viewController is displayed
         self.present(tAndCVC, animated: true)
     }
-    
 }
 
 extension StartScreenViewController {
@@ -65,6 +77,12 @@ extension StartScreenViewController {
     // function to close keyboard by touching anywhere
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    func presentNotAcceptedTermsAlert() {
+        let alert = UIAlertController(title: "Terms and Conditions", message: "Please accept the terms and conditions to continue.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in NSLog("The \"Terms OK\" alert occured.")}))
+        self.present(alert, animated: true)
     }
 }
 

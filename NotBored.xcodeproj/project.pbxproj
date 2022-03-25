@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6D6BC64CD8C71A770D6120 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85763755D965B5BFE82AD24 /* Pods_NotBored.framework */; };
 		A9731DB027E5154500C3F126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9731DAF27E5154500C3F126 /* AppDelegate.swift */; };
 		A9731DB227E5154500C3F126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9731DB127E5154500C3F126 /* SceneDelegate.swift */; };
 		A9731DB927E5154600C3F126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9731DB827E5154600C3F126 /* Assets.xcassets */; };
@@ -14,6 +15,13 @@
 		A9731DD127E66F5400C3F126 /* StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9731DCF27E66F5400C3F126 /* StartScreenViewController.xib */; };
 		A9731DD427E6B92000C3F126 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9731DD227E6B92000C3F126 /* TermsAndConditionsViewController.swift */; };
 		A9731DD527E6B92000C3F126 /* TermsAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9731DD327E6B92000C3F126 /* TermsAndConditionsViewController.xib */; };
+		A9F0243D27E8133800B7A4AB /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0243B27E8133700B7A4AB /* ActivityViewController.swift */; };
+		A9F0243E27E8133800B7A4AB /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9F0243C27E8133700B7A4AB /* ActivityViewController.xib */; };
+		A9F0244227EA980900B7A4AB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0244127EA980900B7A4AB /* TabBarController.swift */; };
+		A9F0244527EAA0D700B7A4AB /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0244327EAA0D600B7A4AB /* SuggestionViewController.swift */; };
+		A9F0244627EAA0D700B7A4AB /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9F0244427EAA0D700B7A4AB /* SuggestionViewController.xib */; };
+		A9F0244D27ED63B800B7A4AB /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0244C27ED63B800B7A4AB /* Activities.swift */; };
+		A9F0245727ED7DD200B7A4AB /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0245627ED7DD200B7A4AB /* ActivityService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,16 @@
 		A9731DCF27E66F5400C3F126 /* StartScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartScreenViewController.xib; sourceTree = "<group>"; };
 		A9731DD227E6B92000C3F126 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		A9731DD327E6B92000C3F126 /* TermsAndConditionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsViewController.xib; sourceTree = "<group>"; };
+		A9F0243B27E8133700B7A4AB /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		A9F0243C27E8133700B7A4AB /* ActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
+		A9F0244127EA980900B7A4AB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A9F0244327EAA0D600B7A4AB /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
+		A9F0244427EAA0D700B7A4AB /* SuggestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionViewController.xib; sourceTree = "<group>"; };
+		A9F0244C27ED63B800B7A4AB /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		A9F0245627ED7DD200B7A4AB /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		BC1903F979FB5C2A976C1828 /* Pods-NotBored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.debug.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.debug.xcconfig"; sourceTree = "<group>"; };
+		BDED21699743B5261495DF82 /* Pods-NotBored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.release.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.release.xcconfig"; sourceTree = "<group>"; };
+		D85763755D965B5BFE82AD24 /* Pods_NotBored.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotBored.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6D6BC64CD8C71A770D6120 /* Pods_NotBored.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56F9A03CAFAFC5727EB0FAE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC1903F979FB5C2A976C1828 /* Pods-NotBored.debug.xcconfig */,
+				BDED21699743B5261495DF82 /* Pods-NotBored.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A9731DA327E5154500C3F126 = {
 			isa = PBXGroup;
 			children = (
 				A9731DAE27E5154500C3F126 /* NotBored */,
 				A9731DAD27E5154500C3F126 /* Products */,
+				56F9A03CAFAFC5727EB0FAE5 /* Pods */,
+				E74EC53BC6744E9D55684CCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +88,9 @@
 		A9731DAE27E5154500C3F126 /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
+				A9F0245527ED7DBF00B7A4AB /* Service */,
+				A9F0244927ECF0B700B7A4AB /* Model */,
+				A9F0243F27EA975900B7A4AB /* View */,
 				A9731DC727E66D5200C3F126 /* ViewController */,
 				A9731DAF27E5154500C3F126 /* AppDelegate.swift */,
 				A9731DB127E5154500C3F126 /* SceneDelegate.swift */,
@@ -70,12 +103,48 @@
 		A9731DC727E66D5200C3F126 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A9F0244127EA980900B7A4AB /* TabBarController.swift */,
 				A9731DCE27E66F5400C3F126 /* StartScreenViewController.swift */,
-				A9731DCF27E66F5400C3F126 /* StartScreenViewController.xib */,
 				A9731DD227E6B92000C3F126 /* TermsAndConditionsViewController.swift */,
-				A9731DD327E6B92000C3F126 /* TermsAndConditionsViewController.xib */,
+				A9F0243B27E8133700B7A4AB /* ActivityViewController.swift */,
+				A9F0244327EAA0D600B7A4AB /* SuggestionViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A9F0243F27EA975900B7A4AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9731DCF27E66F5400C3F126 /* StartScreenViewController.xib */,
+				A9731DD327E6B92000C3F126 /* TermsAndConditionsViewController.xib */,
+				A9F0243C27E8133700B7A4AB /* ActivityViewController.xib */,
+				A9F0244427EAA0D700B7A4AB /* SuggestionViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9F0244927ECF0B700B7A4AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9F0244C27ED63B800B7A4AB /* Activities.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9F0245527ED7DBF00B7A4AB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A9F0245627ED7DD200B7A4AB /* ActivityService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E74EC53BC6744E9D55684CCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85763755D965B5BFE82AD24 /* Pods_NotBored.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9731DC027E5154600C3F126 /* Build configuration list for PBXNativeTarget "NotBored" */;
 			buildPhases = (
+				8F8DD34E34866A60B1E39DF8 /* [CP] Check Pods Manifest.lock */,
 				A9731DA827E5154500C3F126 /* Sources */,
 				A9731DA927E5154500C3F126 /* Frameworks */,
 				A9731DAA27E5154500C3F126 /* Resources */,
+				4807C5AC34012ED823DB3F46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,19 +210,68 @@
 				A9731DB927E5154600C3F126 /* Assets.xcassets in Resources */,
 				A9731DD527E6B92000C3F126 /* TermsAndConditionsViewController.xib in Resources */,
 				A9731DD127E66F5400C3F126 /* StartScreenViewController.xib in Resources */,
+				A9F0244627EAA0D700B7A4AB /* SuggestionViewController.xib in Resources */,
+				A9F0243E27E8133800B7A4AB /* ActivityViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4807C5AC34012ED823DB3F46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F8DD34E34866A60B1E39DF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotBored-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9731DA827E5154500C3F126 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F0244527EAA0D700B7A4AB /* SuggestionViewController.swift in Sources */,
+				A9F0245727ED7DD200B7A4AB /* ActivityService.swift in Sources */,
 				A9731DD427E6B92000C3F126 /* TermsAndConditionsViewController.swift in Sources */,
 				A9731DD027E66F5400C3F126 /* StartScreenViewController.swift in Sources */,
 				A9731DB027E5154500C3F126 /* AppDelegate.swift in Sources */,
+				A9F0244D27ED63B800B7A4AB /* Activities.swift in Sources */,
+				A9F0244227EA980900B7A4AB /* TabBarController.swift in Sources */,
+				A9F0243D27E8133800B7A4AB /* ActivityViewController.swift in Sources */,
 				A9731DB227E5154500C3F126 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +397,7 @@
 		};
 		A9731DC127E5154600C3F126 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC1903F979FB5C2A976C1828 /* Pods-NotBored.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +425,7 @@
 		};
 		A9731DC227E5154600C3F126 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDED21699743B5261495DF82 /* Pods-NotBored.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
